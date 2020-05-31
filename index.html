@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Chat | Kakao Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__columns">
+        <span class="status-bar__clock">12:00</span>
+      </div>
+      <div class="status-bar__columns">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <i class="fa fa-volume-up" aria-hidden="true"></i>
+        <i class="fa fa-wifi" aria-hidden="true"></i>
+        <span class="status-bar_battery-level">100%</span>
+        <i class="fa fa-battery" aria-hidden="true"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Chats</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon"
+          ><i class="fa fa-search" aria-hidden="true"></i
+        ></span>
+        <span class="header__icon"
+          ><i class="fa fa-cog" aria-hidden="true"></i
+        ></span>
+      </div>
+    </header>
+    <main class="chats">
+      <ul class="chats__list">
+        <div class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chat__column">
+              <img
+                src="images/avatar.jpg"
+                alt=""
+                class="chat__avatar g-avatar"
+              />
+              <div class="chat__content">
+                <span class="chat__username">
+                  Una
+                </span>
+                <span class="chat__preview">Going Home</span>
+              </div>
+            </div>
+            <div class="chat__column">
+              <span class="chat__timestamp">Yesterday</span>
+            </div>
+          </a>
+        </div>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav_list-item">
+          <a href="friends.html" class="nav__list-link"
+            ><i class="fa fa-user-o" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="nav_list-item">
+          <a href="index.html" class="nav__list-link"
+            ><i class="fa fa-comment" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="nav_list-item">
+          <a href="find.html" class="nav__list-link"
+            ><i class="fa fa-search" aria-hidden="true"></i
+          ></a>
+        </li>
+        <li class="nav_list-item">
+          <a href="more.html" class="nav__list-link"
+            ><i class="fa fa-ellipsis-h" aria-hidden="true"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
