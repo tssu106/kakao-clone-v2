@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Chat | Kakao Clone</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
         <i class="fa fa-clock-o" aria-hidden="true"></i>
         <i class="fa fa-volume-up" aria-hidden="true"></i>
         <i class="fa fa-wifi" aria-hidden="true"></i>
-        <span class="status-bar_battery-level">100%</span>
+        <span class="status-bar__battery-level">100%</span>
         <i class="fa fa-battery" aria-hidden="true"></i>
       </div>
     </div>
@@ -31,6 +32,9 @@
           ><i class="fa fa-search" aria-hidden="true"></i
         ></span>
         <span class="header__icon"
+          ><i class="fa fa-comment-o" aria-hidden="true"></i
+        ></span>
+        <span class="header__icon"
           ><i class="fa fa-cog" aria-hidden="true"></i
         ></span>
       </div>
@@ -39,21 +43,25 @@
       <ul class="chats__list">
         <div class="chats__chat chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img
-                src="images/avatar.jpg"
-                alt=""
-                class="chat__avatar g-avatar"
-              />
-              <div class="chat__content">
-                <span class="chat__username">
-                  Una
-                </span>
-                <span class="chat__preview">Going Home</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="images/avatar.jpg"
+                  alt=""
+                  class="g-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    SangYun
+                  </span>
+                  <span class="friend__bottom-text">
+                    Going home!
+                  </span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <span class="chat__timestamp">March 8 </span>
+              </div>
             </div>
           </a>
         </div>
@@ -67,8 +75,9 @@
           ></a>
         </li>
         <li class="nav_list-item">
-          <a href="index.html" class="nav__list-link"
-            ><i class="fa fa-comment" aria-hidden="true"></i
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
+            <i class="fa fa-comment" aria-hidden="true"></i
           ></a>
         </li>
         <li class="nav_list-item">
